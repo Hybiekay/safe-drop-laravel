@@ -15,7 +15,7 @@
         <div class="dashboard__sidebar-inner">
             <ul class="dashboard-nav ps-0">
                 @foreach ($menus as $k => $menu)
-                @if ($menu == "settings")
+                @if ($k == "settings" || $k ==  "other")
                 @continue
                     
                 @endif
