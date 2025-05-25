@@ -19,11 +19,12 @@ class SiteController extends Controller
     public function index()
     {
         
-        $pageTitle   = 'Home';
-        $sections    = Page::where('tempname', activeTemplate())->where('slug', '/')->first();
-        $seoContents = $sections->seo_content;
-        $seoImage    = @$seoContents->image ? getImage(getFilePath('seo') . '/' . @$seoContents->image, getFileSize('seo')) : null;
-        return view('Template::home', compact('pageTitle', 'sections', 'seoContents', 'seoImage'));
+        // $pageTitle   = 'Home';
+        // $sections    = Page::where('tempname', activeTemplate())->where('slug', '/')->first();
+        // $seoContents = $sections->seo_content;
+        // $seoImage    = @$seoContents->image ? getImage(getFilePath('seo') . '/' . @$seoContents->image, getFileSize('seo')) : null;
+        // return view('Template::home', compact('pageTitle', 'sections', 'seoContents', 'seoImage'));
+return redirect("/admin");
     }
 
     public function pages($slug)
