@@ -26,7 +26,7 @@ Route::controller('SiteController')->group(function () {
     // Route::get('blog', 'blog')->name('blog');
     // Route::get('blog/{slug}', 'blogDetails')->name('blog.details');
     // Route::get('policy/{slug}', 'policyPages')->name('policy.pages');
-    // Route::get('placeholder-image/{size}', 'placeholderImage')->withoutMiddleware('maintenance')->name('placeholder.image');
+    Route::get('placeholder-image/{size}', 'placeholderImage')->withoutMiddleware('maintenance')->name('placeholder.image');
     Route::get('maintenance-mode', 'maintenance')->withoutMiddleware('maintenance')->name('maintenance');
     // Route::get('/{slug}', 'pages')->name('pages');
     Route::get('/', 'index')->name('home');
