@@ -15,10 +15,10 @@
         <div class="dashboard__sidebar-inner">
             <ul class="dashboard-nav ps-0">
                 @foreach ($menus as $k => $menu)
-                @if ($k == "settings" || $k ==  "other")
+                {{-- @if ($k == "settings" || $k ==  "other")
                 @continue
                     
-                @endif
+                @endif --}}
                     <li class="dashboard-nav__title">
                         <span class="dashboard-nav__title-text">{{ __(str_replace('_', ' ', $k)) }}</span>
                     </li>
